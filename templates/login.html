@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} login{% endblock %}
+{% block body %}
+
+{% with messages = get_flashed_messages() %}
+{% for message in messages %}
+<p>{{message}}</p>
+{% endfor %}
+{% endwith %}
+
+<form action="#" method="POST">
+    <p>Name:</p>
+    <p> <input type="text" name="nm"> </p>
+    <p> <input type="submit" value="完了"> </p>
+</form>
+
+{% endblock %}
